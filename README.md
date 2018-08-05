@@ -1,4 +1,4 @@
-# PokemonOOPTest
+# Pokemon OOP Test
 An Object Oriented Programming exam for beginners. Includes elements of TDD.
 
 
