@@ -47,6 +47,26 @@ sample_attack = {
 # Write Your Code Below This Line
 
 # Code Here...
+class Pokemon:
+  def __init__(self, options):
+    self.name = options.get("name")
+    self.hp = options.get("hp")
+    self.attacks = []
+  
+  def learn_attack(self, attack):
+    self.attacks.append(attack)
+
+  def receive_damage(self, amount, type):
+    self.hp -= amount
+
+  def perform_attack(self, attack, target):
+    target.receive_damage(attack.power, attack.type)
+
+class Attack:
+  def __init__(self, options):
+    self.name = options.get("name")
+    self.power = options.get("power")
+    self.type = options.get("type")
 
 # Write Your Code Above This Line
 
